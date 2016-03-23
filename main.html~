@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Julia Sets</title>
+    <script src="main.js"></script>
+  </head>
+
+  <body onload="init()">
+    re: -1.0<input type="range" id="re" min="-1.0" max="1.0" step="0.01" value="0.38" onchange="init()" />1.0 (<span id="display_re">0.38</span>)<br/>
+    im: -1.0<input type="range" id="im" min="-1.0" max="1.0" step="0.01" value="0.12" onchange="init()" />1.0 (<span id="display_im">0.12</span>)<br/>
+    <br/>
+    <canvas id="myCanvas" width="640" height="640"></canvas>
+    
+  </body>
+</html>

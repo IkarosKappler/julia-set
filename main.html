@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Julia Sets</title>
+    <script src="main.js"></script>
+    <style>
+      div.label {
+      display    : inline-block;
+      width      : 80px;
+      text-align : right;
+      }
+    </style>
+  </head>
+
+  <body onload="init()">
+    <div class="label">re:</div> -1.0 
+    <button onclick="changeRe(-0.01);">-</button>
+    <input type="range" id="re" min="-1.0" max="1.0" step="0.01" value="0.38" onchange="init()" />
+    <button onclick="changeRe(0.01);">+</button> 1.0 
+    (<span id="display_re">0.38</span>)<br/>
+
+    <div class="label">im:</div> -1.0
+    <button onclick="changeIm(0.01);">-</button>
+    <input type="range" id="im" min="-1.0" max="1.0" step="0.01" value="0.12" onchange="init()" />
+    <button onclick="changeIm(-0.01);">+</button> 1.0 
+    (<span id="display_im">0.12</span>)<br/>
+
+    <div class="label">iterations:</div> -1.0
+    <button onclick="changeIter(-1);">-</button>
+    <input type="range" id="iterations" min="1" max="100" step="1" value="10" onchange="init()" />
+    <button onclick="changeIter(1);">+</button> 1 
+    (<span id="display_iterations">10</span>)<br/>
+    <br/>
+    <canvas id="myCanvas" width="640" height="640"></canvas>
+    
+  </body>
+</html>
