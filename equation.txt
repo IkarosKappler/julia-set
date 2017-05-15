@@ -1,0 +1,7 @@
+\begin{align*}
+ c &:= a + i*b \\
+ f_c &: \mathbb{C} \mapsto \mathbb{C} \\
+ f_c(c + i*d) &:= (c^2 - d^2 + a) + i*(2 * c * d + b)
+\end{align*}
+
+http://quicklatex.com/
